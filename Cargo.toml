@@ -1,0 +1,25 @@
+[package]
+name = "axum-login-demos"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.6.20"
+sqlx="0.6.3"
+mime_guess="2.0.4"
+tower-http={version="0.4.4",features=["full"]}
+tower={version="0.4.13",features=["full"]}
+serde={version="1.0.189",features=["derive"]}
+
+[dependencies.axum-login]
+version="0.6.0"
+features = ["sqlite"]
+
+[dependencies.rand]
+version = "0.8.5"
+features = ["min_const_gen"]
+
+[dependencies.tokio]
+version = "1.0"
+features = ["full"]
+
